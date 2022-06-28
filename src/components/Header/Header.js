@@ -18,7 +18,7 @@ const Header = (props) => {
 			<button className={style.button_lang}> En </button>
 			<button className={style.button_sign}><img src={verification} alt="verification"/> </button>
 			<button className={style.button_wishes}> <img src={wishes} alt="wishes"/> </button>
-			<div onClick={()=>props.setIsVisibleBasket(true)} className={style.basket}>
+			<div onClick={()=>props.toggleVisibleBasket(true)} className={style.basket}>
 				 <img src={basket} alt=""/> 
 				 	<div className={style.basket_count}>{props.basketCount} </div>
 			</div>
