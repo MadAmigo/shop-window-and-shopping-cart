@@ -41,8 +41,8 @@ export const getItems = ()=>async (dispatch)=>{
 	
 	 if(response.data.result)	{
 	 let itemsList=[]
-	 response.data.items.slice(0,10).map((el)=>{
-	   let item={}
+	 response.data.items.slice(0,10).map((el)=>{	  
+	   let item={}	   
 	   item.id= el.id
 	   item.booksName = el.name
 	   item.price = el.price
