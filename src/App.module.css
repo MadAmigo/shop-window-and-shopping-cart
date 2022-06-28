@@ -1,0 +1,41 @@
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 40px;
+}
+
+.wrapper {
+   box-sizing: border-box;
+  margin:  20px ;
+  padding: 20px;
+ 
+  
+  border: 2px solid #CCC;
+ 
+  
+}
+
+
+
+
+
+  .dontUsed {
+     display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4,calc(25% - 10px));
+  grid-template-rows: repeat(5,100px);
+
+   grid-column: 1 / 5;
+  grid-row: 1 / 2;
+
+   grid-column: 1 / 2;
+  grid-row: 2 / 4;
+
+    grid-column: 2 / 5;
+  grid-row: 2 / 6;
+  }

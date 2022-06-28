@@ -1,0 +1,127 @@
+.header {
+  
+   background-color: #EFF07D;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logotype {
+	width: 120px;
+	height: 80px;
+	
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+}
+
+.serch {
+ position: relative;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  width: 500px; 
+  height: 52px;
+  border-radius: 50px;
+}
+
+input {
+	 color: #8f8f8f;
+  width: 100% ;
+  height: 100%;
+  line-height: 35px;
+  border: transparent;
+   border-radius: 50px;
+}
+
+input:hover{
+	cursor: pointer;
+}
+
+ .loupe {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+ 	width: 12px;
+ 	height: 12px;
+ }
+
+ .loupe:hover{
+	cursor: pointer;
+}
+
+ button {
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	height: 52px;
+ 	border-radius: 8px;
+ 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+
+ button:hover{
+	cursor: pointer;
+	background-color: #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+}
+ button button_lang { 	
+ 	width: 82px;
+  }
+
+
+.button_sign {
+background-color: #fff;
+width: 52px;
+border-radius: 50%;
+}
+
+ .button_sign:hover{
+	cursor: pointer;
+	background-color: #F0FBFF;
+}
+
+.button_wishes {
+background-color: #FDFDE9;
+width: 52px;
+border-radius: 50%;
+}
+
+.basket {
+	position: relative;
+	background-color: #FFFFFF;
+padding: 10px 30px 10px 10px;
+font-size: 20px;
+ 	font-weight: bold;
+  width: 82px;
+ 	height: 52px;
+ 	border-radius: 8px;
+ 	border: 2px solid #000000;
+}
+
+.basket:hover{
+	cursor: pointer;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.basket_count {
+	position: absolute;
+	border-radius: 50%;
+ 	border: 2px solid #000000;
+ 	width: 20px;
+ 	height: 20px;
+ 	left: 45px;
+ 	top: 20px;
+ 	font-size: 12px;
+ 	text-align: center;
+ 	align-self: center;
+}
+

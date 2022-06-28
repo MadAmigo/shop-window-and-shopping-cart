@@ -1,0 +1,48 @@
+.wrapper {
+	 grid-column: 2 / 6;
+	display:grid;
+	grid-template-rows: 2;
+	justify-content: center;
+}
+
+.preloader {
+	grid-row: 1/2;
+	font-weight: bold;
+	margin: 0 auto;
+}
+.cards_wrapper {
+	
+	
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+.card {
+	justify-content: center;
+	padding: 20px;
+	margin: 10px 10px 10px 10px;
+	width: 200px;
+	border: 2px solid red;  
+}
+
+
+.quantity {
+	width: 70px;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	height: 30px;
+}
+.card_input :hover {
+	  transform: scale(1.05);
+}
+.show_Alert {
+    position: fixed;
+    z-index: 100;
+    right: 60px;
+    top: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
