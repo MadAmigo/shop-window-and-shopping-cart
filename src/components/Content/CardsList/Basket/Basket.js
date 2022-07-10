@@ -71,17 +71,9 @@ const BasketItem=({item,addBasketItem})=> {
 		setToggleSendBasketItem(!toggleSendBasketItem)
 	}
 
-	useEffect(()=>{
-		addBasketItem({...item,quantity:quantityToBasket})
-		
-		},[toggleSendBasketItem])			
-		
-		
-		 
-		
-	
-	  
-	    return (
+	useEffect(()=>{addBasketItem({...item,quantity:quantityToBasket})},[toggleSendBasketItem])			
+				 		
+	return (
 	        <tr>
 	            <td>{item.booksName}</td>
 	            <td>{item.quantity}</td>
@@ -95,7 +87,5 @@ const BasketItem=({item,addBasketItem})=> {
 	        </tr>
 	    );
 }
-
-
 export default Basket
 

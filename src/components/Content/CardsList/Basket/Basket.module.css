@@ -1,5 +1,4 @@
 .basket {
-  
   display: block; /* Скрыто по умолчанию */
   position: fixed; /* Оставаться на месте */
   z-index: 1; /* Сидеть на вершине */
@@ -35,7 +34,6 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
-
 }
 h5 {
   font-size: 50px;
@@ -61,12 +59,9 @@ h5 {
   text-align: center;
 }
 
-.basket_table td:nth-child(1){
- 
+.basket_table td:nth-child(1){ 
   text-align: left;
 }
-
-
 
 .basket_table tbody tr:nth-child(odd){
   background: #fff;
@@ -79,8 +74,7 @@ h5 {
   display: flex;
 justify-content: space-around;
 align-items: center;
-  color: red;
- 
+  color: red; 
 }
 .basket_button_change {
    padding: 8px;

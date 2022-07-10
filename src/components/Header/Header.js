@@ -1,19 +1,29 @@
 import React from 'react'
 import style from './Header.module.css'
 import Logo from '../../Images/logo_1.jpg'
-import loupe from '../../Images/loupe.png'
+import clear from '../../Images/clear.png'
 import verification from '../../Images/verification.png'
 import wishes from '../../Images/wishes.png'
 import basket from '../../Images/basket.png'
 
 const Header = (props) => {
-	 
+	
+	 const handleChange = (event) => {
+	 	props.getSerchHeaderValue(event.target.value,)
+	 }
+	
 	return (
 		<div className={style.header}>
 			<div className={style.logotype}> <img src={Logo} alt=""/> </div>
 			<div className={style.serch}> 
- 				<input type="text"  placeholder="       Input your search query or URL" />
- 				<img className={style.loupe} src={loupe} alt=""/> 				
+ 				<input className={style.serch_input}
+	 				 type="text"
+	 				 placeholder="Input your search query or URL"
+	 				 value={props.serchHeaderValue}
+	 				 onChange={handleChange}
+ 				    />
+ 				 <img onClick={()=>props.getSerchHeaderValue('')} className={style.clear} src={clear} alt=""/> 	
+
  			</div>
 			<button className={style.button_lang}> En </button>
 			<button className={style.button_sign}><img src={verification} alt="verification"/> </button>

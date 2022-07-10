@@ -5,26 +5,24 @@
 	justify-content: center;
 }
 
-.preloader {
-	grid-row: 1/2;
-	font-weight: bold;
-	margin: 0 auto;
-}
+
 .cards_wrapper {
-	
-	
+		align-self: center;
 	display:flex;
+	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
 
 .card {
-	justify-content: center;
+	justify-content: space-between;
 	padding: 20px;
 	margin: 10px 10px 10px 10px;
 	width: 200px;
-	border: 2px solid red;  
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;  
 }
 
 
@@ -38,6 +36,7 @@
 	  transform: scale(1.05);
 }
 .show_Alert {
+	
     position: fixed;
     z-index: 100;
     right: 60px;
@@ -45,4 +44,11 @@
     background-color: #000;
     color: #fff;
     padding: 10px;
+}
+
+.card_submit{
+	font-size: 16px;
+	justyfy-self:end;
+	max-height: 50%;
+	margin: 10px
 }

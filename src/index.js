@@ -15,25 +15,8 @@ const root = createRoot(rootElement);
 root.render(
   <HashRouter>
      <Provider store={store}>
-     <App />
+     <App  />
      </Provider>
 /  </HashRouter>,
 );
 
-
-// let rerenderEntireTree =(state)=> {
-// ReactDOM.render(
-//   <HashRouter>
-//     <Provider store={store}>
-//     <App />
-//     </Provider>
-//   </HashRouter>,
-//   document.getElementById('root')
-// )
-// }
-
-// rerenderEntireTree(store.getState());
-
-// store.subscribe(()=>{
-//   let state=store.getState()
-//   rerenderEntireTree(state)})
